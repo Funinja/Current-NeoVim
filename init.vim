@@ -16,7 +16,6 @@ Plug 'https://github.com/tc50cal/vim-terminal'
 Plug 'https://github.com/preservim/tagbar' 
 Plug 'https://github.com/terryma/vim-multiple-cursors' 
 Plug 'https://github.com/neoclide/coc.nvim'
-Plug 'https://github.com/fatih/vim-go'
 
 call plug#end()
 
