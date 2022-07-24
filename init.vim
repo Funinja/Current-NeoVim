@@ -19,15 +19,18 @@ Plug 'https://github.com/neoclide/coc.nvim'
 
 call plug#end()
 
-"NERDTree mapping
+" NERDTree mapping
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 
-"Tagbar mapping
+" Tagbar mapping
 nnoremap <C-g> :TagbarToggle<CR>
 
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="~"
+
+" Colorscheme
+colorscheme jellybeans
 
 " use <tab> for trigger completion and navigate to the next complete item
  function! s:check_back_space() abort
