@@ -6,7 +6,7 @@ enable Windows Subsystem for Linux and Virtual Machine Platform
 
 2. then go to the microsoft store and search for and install ubuntu.
 
-To install my setp from scratch in ubuntu, do the following steps.
+To install my setup from scratch in ubuntu, do the following steps.
 
 1. First install Neovim:
   sudo apt install neovim
