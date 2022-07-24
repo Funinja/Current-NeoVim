@@ -31,7 +31,7 @@ Some plugins will require additional setup, so there may be some error messages 
 6. To install Tagbar, run:<br/>
 sudo apt install exuberant-ctags
 
-7. To fully use COC:<br/>
+7. To fully use COC(autocomplete):<br/>
 curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -<br/>
 sudo apt-get install -y nodejs<br/>
 sudo npm install -g yarn<br/>
