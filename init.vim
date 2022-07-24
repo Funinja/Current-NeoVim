@@ -19,6 +19,13 @@ Plug 'https://github.com/neoclide/coc.nvim'
 
 call plug#end()
 
+"NERDTree mapping
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+
+"Tagbar mapping
+nnoremap <C-g> :TagbarToggle<CR>
+
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="~"
 
