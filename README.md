@@ -12,7 +12,7 @@ To install my setup from scratch in ubuntu, do the following steps.
   sudo apt install neovim
   
 2. Use git to clone the respository into a folder called .config/nvim:<br/>
-git clone https://github.com/Funinja/Current-NeoVim.git ~/.config/local
+git clone https://github.com/Funinja/Current-NeoVim.git ~/.config/nvim
 
 3. Get a nerd font for the wsl terminal at https://www.nerdfonts.com/font-downloads.
 
