@@ -1,47 +1,19 @@
-vim.opt.tabstop = 2
-vim.opt.shiftwidth = 2
-vim.opt.softtabstop = 2
-vim.opt.expandtab = true
-vim.wo.number = true
-
-require('packer').startup(function(use)
-  -- Packer can manage itself
-  use 'wbthomason/packer.nvim'
-
-  -- Colorscheme
-  use 'joshdick/onedark.vim'
-
-  -- LSP
-  use {
-    'VonHeikemen/lsp-zero.nvim',
-    requires = {
-      -- LSP Support
-      {'neovim/nvim-lspconfig'},
-      {'williamboman/nvim-lsp-installer'},
-
-      -- Autocomplete
-      {'hrsh7th/nvim-cmp'},
-      {'hrsh7th/cmp-buffer'}, 
-      {'hrsh7th/cmp-path'},
-      {'saadparwaiz1/cmp_luasnip'},
-      {'hrsh7th/cmp-nvim-lsp'},
-      {'hrsh7th/cmp-nvim-lua'},
-
-      -- Snippets
-      {'L3MON4D3/LuaSnip'},
-      {'rafamadriz/friendly-snippets'},
-    }
-
-  }
-
-end)
+require('options')
+require('treesitter-config')
+require('lualine-config')
+require('bufferline-config')
+require('nvim-tree-config')
+require('nvim-ts-autotag-config')
+require('telescope-config')
+require('cmp-config')
+require('keybindings')
+require('whichkey-config')
+require('lang-server')
+require('plugins')
 
 vim.opt.signcolumn = 'yes'
+vim.cmd('nnoremap <C-v> :TagbarToggle<CR>')
 vim.opt.termguicolors = true
-pcall(vim.cmd, 'colorscheme onedark')
+pcall(vim.cmd, 'colorscheme nightfly')
 
-local lsp = require('lsp-zero')
 
-lsp.preset('recommended')
-lsp.nvim_workspace()
-lsp.setup()
