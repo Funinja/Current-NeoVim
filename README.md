@@ -21,3 +21,8 @@ For the sake of example, you could download the zip file for the JetBrainsMono n
 
 After extracting it to a folder, highlight all of the files extracted and right click to install all of them. Then, if you right click your terminal and select properties then go to font, you should be able to select the nerd font you had just installed.
 
+8. Get rp: <br>
+sudo apt-get install ripgrep
+
+9. To install Tagbar, run: <br>
+sudo apt install exuberant-ctags
