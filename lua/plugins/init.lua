@@ -21,21 +21,13 @@ require('packer').startup(function()
    tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
 
-  use {
-    'windwp/nvim-ts-autotag'
+--  use {
+  --  'windwp/nvim-ts-autotag'
 
-  }
+  --}
 
   use 'preservim/tagbar'
   use 'p00f/nvim-ts-rainbow'
-
-  use {
-      
-    "windwp/nvim-autopairs",
-    
-    config = function() require("nvim-autopairs").setup {} end
-    
-  }
 
   use {
       'nvim-telescope/telescope.nvim', tag = '0.1.0',
@@ -43,16 +35,8 @@ require('packer').startup(function()
       requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use 'bluz71/vim-nightfly-guicolors'
+  use 'arcticicestudio/nord-vim'
 
-  use 'neovim/nvim-lspconfig'
-  use 'hrsh7th/cmp-nvim-lsp'
-  use 'hrsh7th/cmp-buffer'
-  use 'hrsh7th/cmp-path'
-  use 'hrsh7th/cmp-cmdline'
-  use 'hrsh7th/nvim-cmp'
-  use 'hrsh7th/cmp-vsnip'
-  use 'hrsh7th/vim-vsnip'
 
   use 'folke/which-key.nvim'
 

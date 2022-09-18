@@ -100,7 +100,7 @@
   local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
   -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
 
-  local servers = { 'clangd', 'rust_analyzer', 'pyright', 'tsserver' }
+  local servers = { 'clangd', 'rust_analyzer', 'pyright', 'tsserver', 'vls', 'tailwindcss', 'gopls'}
   local lspconfig = require('lspconfig')
   for _, lsp in ipairs(servers) do
       lspconfig[lsp].setup {
