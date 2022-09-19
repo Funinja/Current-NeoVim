@@ -1,7 +1,6 @@
 local use = require('packer').use
 require('packer').startup(function()
   use 'wbthomason/packer.nvim' -- Package manager
-  use "williamboman/nvim-lsp-installer"
 
   -- TreeSitter
   use {'nvim-treesitter/nvim-treesitter', run = ":TSUpdate" }
