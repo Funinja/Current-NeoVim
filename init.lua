@@ -17,6 +17,6 @@ require('lspsaga-config')
 vim.opt.signcolumn = 'yes'
 vim.cmd('nnoremap <C-v> :TagbarToggle<CR>')
 vim.opt.termguicolors = true
-pcall(vim.cmd, 'colorscheme nord')
+pcall(vim.cmd, 'colorscheme moonfly')
 
 

@@ -34,8 +34,7 @@ require('packer').startup(function()
       requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use 'arcticicestudio/nord-vim'
-
+  use 'bluz71/vim-moonfly-colors'
 
   use 'folke/which-key.nvim'
 
@@ -48,6 +47,7 @@ require('packer').startup(function()
 
   use "L3MON4D3/LuaSnip"
   use 'saadparwaiz1/cmp_luasnip'
+  use 'williamboman/nvim-lsp-installer'
 
   use('jose-elias-alvarez/null-ls.nvim')
   use('MunifTanjim/prettier.nvim')
